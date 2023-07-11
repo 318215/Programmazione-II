@@ -1,4 +1,0 @@
-fun-app.o: fun-app.cc liste-tipo.h liste.h fun-app.h
-liste-tipo.o: liste-tipo.cc liste-tipo.h liste.h
-liste.o: liste.cc liste-tipo.h liste.h
-main.o: main.cc liste-tipo.h liste.h fun-app.h

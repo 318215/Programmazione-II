@@ -1,4 +1,0 @@
-albero-tipo.o: albero-tipo.cc albero-tipo.h
-albero.o: albero.cc albero-tipo.h albero.h
-coda-bfs.o: coda-bfs.cc albero-tipo.h albero.h coda-bfs.h
-main.o: main.cc albero-tipo.h albero.h coda-bfs.h
