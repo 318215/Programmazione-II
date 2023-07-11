@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Modulo_Albero:  File sorgente albero.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Modulo_Albero
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">albero.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="albero_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structnode.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structnode.html#a24c7bd7ce6da0d2f41ab2458832089e1">   15</a></span>   <a class="code hl_typedef" href="albero-tipo_8h.html#a0747f12c81296bfbad2d0deffa874cf2">tipo_inf</a> <a class="code hl_variable" href="structnode.html#a24c7bd7ce6da0d2f41ab2458832089e1">inf</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structnode.html#a5e88137f1d0e2f7a940bccf4c3d3a4d3">   16</a></span>   <a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_variable" href="structnode.html#a5e88137f1d0e2f7a940bccf4c3d3a4d3">parent</a>; <span class="comment">//opzionale</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structnode.html#a3a2991aa25d26ee632e290d128fa4d5a">   17</a></span>      <a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_variable" href="structnode.html#a3a2991aa25d26ee632e290d128fa4d5a">firstChild</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structnode.html#abfb248ed0c536ebb497f7404d74ba1e3">   18</a></span>      <a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_variable" href="structnode.html#abfb248ed0c536ebb497f7404d74ba1e3">nextSibling</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="albero_8h.html#a7a29ec3498c76ac0f32b6927d60852b8">   21</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_typedef" href="albero_8h.html#a7a29ec3498c76ac0f32b6927d60852b8">tree</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_function" href="albero_8h.html#abe72a184318f0521b4df58ab6eeda30e">new_node</a>(<a class="code hl_typedef" href="albero-tipo_8h.html#a0747f12c81296bfbad2d0deffa874cf2">tipo_inf</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span> <a class="code hl_function" href="albero_8h.html#a939a8a7023e89b4a352dbb8379dba45b">insert_child</a>(<a class="code hl_struct" href="structnode.html">tree</a>, <a class="code hl_struct" href="structnode.html">tree</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> <a class="code hl_function" href="albero_8h.html#a9d541db79d99757a57edf0956d6431e4">insert_sibling</a>(<a class="code hl_struct" href="structnode.html">node</a>*, <a class="code hl_struct" href="structnode.html">tree</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><a class="code hl_typedef" href="albero-tipo_8h.html#a0747f12c81296bfbad2d0deffa874cf2">tipo_inf</a> <a class="code hl_function" href="albero_8h.html#a519bc9f6da479045b5e3c69f1515da17">get_info</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_function" href="albero_8h.html#a08c2c632fdbe3d8a4b560eda05239790">get_parent</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_function" href="albero_8h.html#a10701e734807701e37a3a120d4f513ef">get_firstChild</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_struct" href="structnode.html">node</a>* <a class="code hl_function" href="albero_8h.html#a4ed435342e88c467de5ca9bee057902f">get_nextSibling</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">void</span> <a class="code hl_function" href="albero_8h.html#abb3610f2dc49e8b9f96387389708bd39">serializza</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> <a class="code hl_function" href="albero_8h.html#a407cd8b7ba5ed1f42d6fe683cf850807">altezza</a>(<a class="code hl_struct" href="structnode.html">node</a> *);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">bool</span> <a class="code hl_function" href="albero_8h.html#a0df8123d922491db2a46aea4040f1262">search</a>(<a class="code hl_struct" href="structnode.html">tree</a>, <a class="code hl_typedef" href="albero-tipo_8h.html#a0747f12c81296bfbad2d0deffa874cf2">tipo_inf</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="albero_8h.html#a86bcb30aa8b2af9e6e5eac22b9531812">   33</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="albero_8h.html#a86bcb30aa8b2af9e6e5eac22b9531812">esiste</a>(<a class="code hl_struct" href="structnode.html">node</a>*, <a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">int</span> <a class="code hl_function" href="albero_8h.html#aa4136e77463f6784a74a1e9913176b3b">contaFoglie</a>(<a class="code hl_struct" href="structnode.html">node</a>*);</div>
+<div class="ttc" id="aalbero-tipo_8h_html_a0747f12c81296bfbad2d0deffa874cf2"><div class="ttname"><a href="albero-tipo_8h.html#a0747f12c81296bfbad2d0deffa874cf2">tipo_inf</a></div><div class="ttdeci">char * tipo_inf</div><div class="ttdef"><b>Definition:</b> albero-tipo.h:14</div></div>
+<div class="ttc" id="aalbero_8h_html_a08c2c632fdbe3d8a4b560eda05239790"><div class="ttname"><a href="albero_8h.html#a08c2c632fdbe3d8a4b560eda05239790">get_parent</a></div><div class="ttdeci">node * get_parent(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:51</div></div>
+<div class="ttc" id="aalbero_8h_html_a0df8123d922491db2a46aea4040f1262"><div class="ttname"><a href="albero_8h.html#a0df8123d922491db2a46aea4040f1262">search</a></div><div class="ttdeci">bool search(tree, tipo_inf)</div><div class="ttdef"><b>Definition:</b> albero.cc:115</div></div>
+<div class="ttc" id="aalbero_8h_html_a10701e734807701e37a3a120d4f513ef"><div class="ttname"><a href="albero_8h.html#a10701e734807701e37a3a120d4f513ef">get_firstChild</a></div><div class="ttdeci">node * get_firstChild(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:57</div></div>
+<div class="ttc" id="aalbero_8h_html_a407cd8b7ba5ed1f42d6fe683cf850807"><div class="ttname"><a href="albero_8h.html#a407cd8b7ba5ed1f42d6fe683cf850807">altezza</a></div><div class="ttdeci">int altezza(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:84</div></div>
+<div class="ttc" id="aalbero_8h_html_a4ed435342e88c467de5ca9bee057902f"><div class="ttname"><a href="albero_8h.html#a4ed435342e88c467de5ca9bee057902f">get_nextSibling</a></div><div class="ttdeci">node * get_nextSibling(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:63</div></div>
+<div class="ttc" id="aalbero_8h_html_a519bc9f6da479045b5e3c69f1515da17"><div class="ttname"><a href="albero_8h.html#a519bc9f6da479045b5e3c69f1515da17">get_info</a></div><div class="ttdeci">tipo_inf get_info(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:45</div></div>
+<div class="ttc" id="aalbero_8h_html_a7a29ec3498c76ac0f32b6927d60852b8"><div class="ttname"><a href="albero_8h.html#a7a29ec3498c76ac0f32b6927d60852b8">tree</a></div><div class="ttdeci">node * tree</div><div class="ttdef"><b>Definition:</b> albero.h:21</div></div>
+<div class="ttc" id="aalbero_8h_html_a86bcb30aa8b2af9e6e5eac22b9531812"><div class="ttname"><a href="albero_8h.html#a86bcb30aa8b2af9e6e5eac22b9531812">esiste</a></div><div class="ttdeci">bool esiste(node *, node *)</div></div>
+<div class="ttc" id="aalbero_8h_html_a939a8a7023e89b4a352dbb8379dba45b"><div class="ttname"><a href="albero_8h.html#a939a8a7023e89b4a352dbb8379dba45b">insert_child</a></div><div class="ttdeci">void insert_child(tree, tree)</div><div class="ttdef"><b>Definition:</b> albero.cc:29</div></div>
+<div class="ttc" id="aalbero_8h_html_a9d541db79d99757a57edf0956d6431e4"><div class="ttname"><a href="albero_8h.html#a9d541db79d99757a57edf0956d6431e4">insert_sibling</a></div><div class="ttdeci">void insert_sibling(node *, tree)</div><div class="ttdef"><b>Definition:</b> albero.cc:37</div></div>
+<div class="ttc" id="aalbero_8h_html_aa4136e77463f6784a74a1e9913176b3b"><div class="ttname"><a href="albero_8h.html#aa4136e77463f6784a74a1e9913176b3b">contaFoglie</a></div><div class="ttdeci">int contaFoglie(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:176</div></div>
+<div class="ttc" id="aalbero_8h_html_abb3610f2dc49e8b9f96387389708bd39"><div class="ttname"><a href="albero_8h.html#abb3610f2dc49e8b9f96387389708bd39">serializza</a></div><div class="ttdeci">void serializza(node *)</div><div class="ttdef"><b>Definition:</b> albero.cc:69</div></div>
+<div class="ttc" id="aalbero_8h_html_abe72a184318f0521b4df58ab6eeda30e"><div class="ttname"><a href="albero_8h.html#abe72a184318f0521b4df58ab6eeda30e">new_node</a></div><div class="ttdeci">node * new_node(tipo_inf)</div><div class="ttdef"><b>Definition:</b> albero.cc:20</div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> albero.h:14</div></div>
+<div class="ttc" id="astructnode_html_a24c7bd7ce6da0d2f41ab2458832089e1"><div class="ttname"><a href="structnode.html#a24c7bd7ce6da0d2f41ab2458832089e1">node::inf</a></div><div class="ttdeci">tipo_inf inf</div><div class="ttdef"><b>Definition:</b> albero.h:15</div></div>
+<div class="ttc" id="astructnode_html_a3a2991aa25d26ee632e290d128fa4d5a"><div class="ttname"><a href="structnode.html#a3a2991aa25d26ee632e290d128fa4d5a">node::firstChild</a></div><div class="ttdeci">node * firstChild</div><div class="ttdef"><b>Definition:</b> albero.h:17</div></div>
+<div class="ttc" id="astructnode_html_a5e88137f1d0e2f7a940bccf4c3d3a4d3"><div class="ttname"><a href="structnode.html#a5e88137f1d0e2f7a940bccf4c3d3a4d3">node::parent</a></div><div class="ttdeci">node * parent</div><div class="ttdef"><b>Definition:</b> albero.h:16</div></div>
+<div class="ttc" id="astructnode_html_abfb248ed0c536ebb497f7404d74ba1e3"><div class="ttname"><a href="structnode.html#abfb248ed0c536ebb497f7404d74ba1e3">node::nextSibling</a></div><div class="ttdeci">node * nextSibling</div><div class="ttdef"><b>Definition:</b> albero.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
