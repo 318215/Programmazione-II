@@ -1,0 +1,3 @@
+albero-tipo.o: albero-tipo.cc albero-tipo.h
+albero.o: albero.cc albero-tipo.h albero.h
+main.o: main.cc albero-tipo.h albero.h
