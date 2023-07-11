@@ -1,6 +1,7 @@
 # Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
-Manuel Testoni
+Ciao ragazzi,
+Sono molto felice che qualcuno stia leggendo questo messaggio,
+In questa repository troverete tutti gli esercizi che serve svolgere per passare prog II.
+Esercizi per lo scritto e per il pratico, d'esame e standard.
+Buono studio,
+Manuel
