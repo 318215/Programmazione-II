@@ -245,6 +245,44 @@ lista tail_insert_elem(lista l) {
     return punt;
 
 }
+/** La seguente funzione ritorna una seconda lista in cui sono presenti solamnete gli elementi pari della prima e li rimuove dalla prima. */
+
+void split(lista &l) {  //DA COMPLETARE A CASA!!!
+
+    lista l1 = l;
+    lista l3 = l1;
+
+    while(tail(l) != NULL) {
+
+        if(l->pun->inf %2 == 0) {
+
+            lista l2;
+            l2->inf = l->inf;
+            l1->pun = l2;
+            l2->pun = NULL;
+            l1 = tail(l1);
+            
+
+        }else if(l->inf % 2 != 0) {
+
+            l=tail(l);
+
+        }
+
+    }
+
+}
+
+void stampa_inv(lista l) {
+
+    if(l != NULL) {
+
+        stampa_inv(tail(l));
+        cout << head(l);
+
+    }
+
+}
 
 int lunghezza_lista_ricorsivo(lista l) {
 
@@ -288,7 +326,7 @@ int main()
 
     }
 
-    cout << lunghezza_lista_ricorsivo(testa);
+    cout << lunghezza_lista_ricorsivo(testa) << endl;
 
     /*
     occorrenze = conta(testa,num);
@@ -307,6 +345,7 @@ int main()
     stampalista(testa);
     */
 
+   stampa_inv(testa);
 
     return 0;
 }

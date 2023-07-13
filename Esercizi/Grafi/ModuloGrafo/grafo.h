@@ -18,3 +18,4 @@ int get_dim(graph);
 adj_list get_adjlist(graph,int);
 int get_adjnode(adj_node*);
 adj_list get_nextadj(adj_list);
+float get_adjweight(adj_node);

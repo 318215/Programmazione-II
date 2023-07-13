@@ -107,7 +107,7 @@ int main () {
             case 5: {
 
                 cout << "Grazie per aver usato il mio programma" << endl;
-                return 0;
+                //return 0;
 
             }
 
@@ -124,6 +124,12 @@ int main () {
 
     }while(scelta != 5);
     
+
+    cout << "inserisci il carattere da ricercare ricorsivamente " << endl;
+    cin >> inf;
+    bst p = serach_Ricorsiva(N,inf);
+
+    cout << p->inf;
 
     return 0;
 }

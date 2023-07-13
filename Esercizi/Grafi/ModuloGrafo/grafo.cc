@@ -54,7 +54,7 @@ void add_edge(graph &g,int s,int d,float w) {
     adj_node* t = new adj_node;
 
     add_arc(g,s,d,w);
-    add_arc(g,s,d,w);
+    add_arc(g,d,s,w);
 
 
 }
