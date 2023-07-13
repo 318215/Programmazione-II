@@ -276,3 +276,38 @@ bnode * bst_search(bst n, tipo_key v) {
 
 
 }
+
+
+bst serach_Ricorsiva(bst t, tipo_inf v) {
+
+    bst p;
+
+    if(t == NULL) {
+
+        return NULL;
+
+    }
+
+    if(compare(t->inf,v) == 0) {
+
+        return t;
+
+    }
+
+    if(t->inf[0] < v[0]) {
+
+        p = serach_Ricorsiva(get_right(t),v);
+        return p;
+
+    }
+
+    if(t->inf[0] > v[0] ) {
+
+        p = serach_Ricorsiva(get_left(t),v);
+        return p;
+
+    }
+
+
+
+}

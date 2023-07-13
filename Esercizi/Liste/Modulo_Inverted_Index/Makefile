@@ -1,8 +1,8 @@
-Program = main.o albero.o albero-tipo.o
+Program = main.o lista.o lista-tipo.o parola.o
 CXXFLAGS = -Wall
 
 ModuloAlbero : $(Program)
-	g++ -Wall -o Modulo_BST $(Program)
+	g++ -Wall -o Modulo_Inverted_Index $(Program)
 
 -include dependencies
 
@@ -15,4 +15,4 @@ clean :
 	rm -f *.o
 
 clean-all :
-	rm -f Modulo_BST *.o
+	rm -f ModuloAlbero *.o

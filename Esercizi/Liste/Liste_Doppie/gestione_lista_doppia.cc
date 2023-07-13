@@ -131,6 +131,50 @@ void naviga(elem* e){
 		}
     }		while(scelta!='S');
 }
+
+bool palindroma(lista l) {
+
+	lista x;
+	x = l;
+
+	if(l == NULL) {
+
+		return false;
+
+	}
+
+	while(tail(l) != NULL) {
+
+		l = tail(l);
+
+	}
+
+	if(strcmp(x->inf, l->inf) == 0) {
+
+		l = l->prev;
+
+		delete l->pun;
+
+		while(prev(l) != NULL) {
+
+			l = prev(l);
+
+		}
+
+		l = l->pun;	
+		delete l->prev;
+
+		palindroma(l);
+		return true;
+
+	}else {
+
+		return false;
+
+	}
+
+}
+
 int main()
 {
     int n;
@@ -145,7 +189,8 @@ int main()
     	cout<<"2:cancellare valori dalla lista"<<endl;
     	cout<<"3: stampare la lista"<<endl;
     	cout<<"4:cercare valori nella lista"<<endl;
-    	cout<<"5:esci"<<endl;
+		cout << "5: Controllare la palindromicità della lista doppia" << endl;
+    	cout<<"6:esci"<<endl;
     	cin>>scelta;
     	switch(scelta){
 
@@ -184,10 +229,23 @@ int main()
     			break;
     		
 			case 5: 
-				cout<<"Ciao, ciao!!"<<endl;
+				if(palindroma(testa) == true) {
+
+					cout << "la lista è palindroma" << endl;
+
+				}else {
+
+					cout << "Mi spiace la lista non è palindroma" << endl;
+
+				}
+				break;
+
+			case 6: 
+				cout << "Ciao ciao!!" << endl;
+				break;
 		}
 
-    }while(scelta!=5);
+    }while(scelta!=6);
 
     return 0;
 }

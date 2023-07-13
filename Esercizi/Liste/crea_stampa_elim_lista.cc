@@ -89,16 +89,46 @@ void eliminalista(lista &testa)
 
 }
 
+lista somma_elem(lista l,int p) {
+
+    int cont = 0;
+    lista t = l;
+    lista f = l;
+
+    for(cont = 0; cont < p; cont ++ ) {
+
+        t = tail(t);
+
+    }
+
+    int x = head(t);
+
+    while(l != NULL) {
+
+        l->inf = l->inf + x;
+        l = tail(l);
+
+    }
+
+    l = f;
+
+    return l;
+
+}
 
 int main()
 {
-    int n; 
+    int n,pos = 0; 
     cout << "Inserire il numero di elementi da inserire nella lista" << endl;
     cin >> n; 
     lista testa = crealista(n) ;
     stampalista(testa) ;
-    eliminalista(testa);
-	cout << testa <<endl;
+    //eliminalista(testa);
+	//cout << testa <<endl;
+    //stampalista(testa);
+    cout << "inserisci la posizione dell'elemento da sommare a tutta la lista" << endl;
+    cin >> pos;
+    testa = somma_elem(testa,pos);
     stampalista(testa);
 
     return 0;

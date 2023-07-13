@@ -18,3 +18,4 @@ void bst_insert(bst&, bnode*);
 void bst_delete(bst&, bnode*);
 bnode* bst_search(bst, tipo_key);
 void bst_dfs(bnode*);
+bst serach_Ricorsiva(bst,tipo_inf);
