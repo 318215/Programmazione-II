@@ -27,7 +27,7 @@ int compare(tipo_inf c, tipo_inf t) {
 
         return -1;
 
-    }else if(c.seme != t.seme){
+    }else if(c.seme == 0 && t.seme == 0){
 
         return -1;
 

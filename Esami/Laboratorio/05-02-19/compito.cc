@@ -25,8 +25,15 @@ void stampa(lista mazzo) {
 
     while(mazzo != NULL) {
 
-        print(head(mazzo));
-        mazzo = tail(mazzo);        
+        if(mazzo->inf.valore == 0) {
+
+            mazzo = tail(mazzo);
+
+        }else {
+
+            print(head(mazzo));
+            mazzo = tail(mazzo);        
+        }
 
     }
 
