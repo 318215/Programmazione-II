@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Carta Fedeltà:  File sorgente bst.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Carta Fedeltà
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">bst.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="bst_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">    1</a></span><span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a>;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="structbnode.html">    3</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structbnode.html">bnode</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="structbnode.html#a359b6bc2998182d134f255e872a5d66b">    4</a></span>    <a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a> <a class="code hl_variable" href="structbnode.html#a359b6bc2998182d134f255e872a5d66b">key</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="structbnode.html#aec462e942a87454d03b9912b184912bd">    5</a></span>    <a class="code hl_struct" href="structcarta_fedelt_xC3_xA0.html">tipo_inf</a> <a class="code hl_variable" href="structbnode.html#aec462e942a87454d03b9912b184912bd">inf</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="structbnode.html#ab77995e472d092c87a91b201e1fdeb89">    6</a></span>    <a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_variable" href="structbnode.html#ab77995e472d092c87a91b201e1fdeb89">left</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="structbnode.html#aeb96b50e389e2ca6c4a807bd4059d3bd">    7</a></span>    <a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_variable" href="structbnode.html#aeb96b50e389e2ca6c4a807bd4059d3bd">right</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="structbnode.html#aa419335e7eb211c30f4517799ffcd306">    8</a></span>    <a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_variable" href="structbnode.html#aa419335e7eb211c30f4517799ffcd306">parent</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>};</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="bst_8h.html#aee0f3ff666c3dce88adf97f1d26ee07d">   12</a></span><span class="keyword">typedef</span> <a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_typedef" href="bst_8h.html#aee0f3ff666c3dce88adf97f1d26ee07d">bst</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_function" href="bst_8h.html#aa12e0383fe08e07401429c7ddfbf3c0c">bst_newNode</a>(<a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a>, <a class="code hl_struct" href="structcarta_fedelt_xC3_xA0.html">tipo_inf</a>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a> <a class="code hl_function" href="bst_8h.html#a20147623f2c6b89269186367132a9cde">get_key</a>(<a class="code hl_struct" href="structbnode.html">bnode</a>*);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><a class="code hl_struct" href="structcarta_fedelt_xC3_xA0.html">tipo_inf</a> <a class="code hl_function" href="bst_8h.html#a9b06b5c9194e5939dea46358a87087d4">get_info</a>(<a class="code hl_struct" href="structbnode.html">bst</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> <a class="code hl_function" href="bst_8h.html#a6febd6f9558771038eb31034ab8706e6">get_value</a>(<a class="code hl_struct" href="structbnode.html">bnode</a>*);  <span class="comment">//restituisce il valore del nodo in ingresso</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="bst_8h.html#a457676e656558c908a2f2238dcf28d49">   18</a></span><span class="keywordtype">char</span>* <a class="code hl_function" href="bst_8h.html#a457676e656558c908a2f2238dcf28d49">get_nominativo</a>(<a class="code hl_struct" href="structbnode.html">bnode</a>*);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><a class="code hl_struct" href="structbnode.html">bst</a> <a class="code hl_function" href="bst_8h.html#a6a49d2e77127fbd509ad9508d3ba3471">get_left</a>(<a class="code hl_struct" href="structbnode.html">bst</a>); <span class="comment">//restituisce il sottoalbero sinistro dell’albero in ingresso</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_struct" href="structbnode.html">bst</a> <a class="code hl_function" href="bst_8h.html#a68f40cdc37c9735eeefd5715479b7f79">get_right</a>(<a class="code hl_struct" href="structbnode.html">bst</a>); <span class="comment">//restituisce il sottoalbero destro dell’albero in ingresso</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_function" href="bst_8h.html#aae81f7032dbb2b4ff43e32e02a778e8b">get_parent</a>(<a class="code hl_struct" href="structbnode.html">bnode</a>* n); <span class="comment">// restituisce il padre dell’albero in ingresso</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">void</span> <a class="code hl_function" href="bst_8h.html#acf36ff27901ecb91f142d965aba5ba86">bst_insert</a>(<a class="code hl_struct" href="structbnode.html">bst</a>&amp;,<a class="code hl_struct" href="structbnode.html">bnode</a>*) ; <span class="comment">//aggiunge un nodo al bst</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span> <a class="code hl_function" href="bst_8h.html#a750f8c8fa77665ff0e7648300285f477">print_key</a>(<a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><a class="code hl_struct" href="structbnode.html">bnode</a>* <a class="code hl_function" href="bst_8h.html#a7d01a5ca46273f3b433e25773b3cce57">bst_search</a>(<a class="code hl_struct" href="structbnode.html">bst</a>,<a class="code hl_typedef" href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> <a class="code hl_function" href="bst_8h.html#acc6ea038d88b5874d0b630f5e180319a">bst_delete</a>(<a class="code hl_struct" href="structbnode.html">bst</a>&amp;, <a class="code hl_struct" href="structbnode.html">bnode</a>*);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span> <a class="code hl_function" href="bst_8h.html#a3b539c6d67508104a7e596c12039dfe5">stampaCrescente</a>(<a class="code hl_struct" href="structbnode.html">bst</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="ttc" id="abst_8h_html_a20147623f2c6b89269186367132a9cde"><div class="ttname"><a href="bst_8h.html#a20147623f2c6b89269186367132a9cde">get_key</a></div><div class="ttdeci">tipo_key get_key(bnode *)</div><div class="ttdef"><b>Definition:</b> bst.cc:21</div></div>
+<div class="ttc" id="abst_8h_html_a3b539c6d67508104a7e596c12039dfe5"><div class="ttname"><a href="bst_8h.html#a3b539c6d67508104a7e596c12039dfe5">stampaCrescente</a></div><div class="ttdeci">void stampaCrescente(bst)</div><div class="ttdoc">Funzione che permette la stampa in modo crescente delle chaivi e del campo informativo di un albero.</div><div class="ttdef"><b>Definition:</b> bst.cc:158</div></div>
+<div class="ttc" id="abst_8h_html_a457676e656558c908a2f2238dcf28d49"><div class="ttname"><a href="bst_8h.html#a457676e656558c908a2f2238dcf28d49">get_nominativo</a></div><div class="ttdeci">char * get_nominativo(bnode *)</div></div>
+<div class="ttc" id="abst_8h_html_a68f40cdc37c9735eeefd5715479b7f79"><div class="ttname"><a href="bst_8h.html#a68f40cdc37c9735eeefd5715479b7f79">get_right</a></div><div class="ttdeci">bst get_right(bst)</div><div class="ttdef"><b>Definition:</b> bst.cc:39</div></div>
+<div class="ttc" id="abst_8h_html_a6a49d2e77127fbd509ad9508d3ba3471"><div class="ttname"><a href="bst_8h.html#a6a49d2e77127fbd509ad9508d3ba3471">get_left</a></div><div class="ttdeci">bst get_left(bst)</div><div class="ttdef"><b>Definition:</b> bst.cc:29</div></div>
+<div class="ttc" id="abst_8h_html_a6febd6f9558771038eb31034ab8706e6"><div class="ttname"><a href="bst_8h.html#a6febd6f9558771038eb31034ab8706e6">get_value</a></div><div class="ttdeci">int get_value(bnode *)</div><div class="ttdef"><b>Definition:</b> bst.cc:25</div></div>
+<div class="ttc" id="abst_8h_html_a750f8c8fa77665ff0e7648300285f477"><div class="ttname"><a href="bst_8h.html#a750f8c8fa77665ff0e7648300285f477">print_key</a></div><div class="ttdeci">void print_key(tipo_key)</div><div class="ttdef"><b>Definition:</b> bst.cc:18</div></div>
+<div class="ttc" id="abst_8h_html_a7d01a5ca46273f3b433e25773b3cce57"><div class="ttname"><a href="bst_8h.html#a7d01a5ca46273f3b433e25773b3cce57">bst_search</a></div><div class="ttdeci">bnode * bst_search(bst, tipo_key)</div><div class="ttdef"><b>Definition:</b> bst.cc:89</div></div>
+<div class="ttc" id="abst_8h_html_a9b06b5c9194e5939dea46358a87087d4"><div class="ttname"><a href="bst_8h.html#a9b06b5c9194e5939dea46358a87087d4">get_info</a></div><div class="ttdeci">tipo_inf get_info(bst)</div><div class="ttdef"><b>Definition:</b> bst.cc:33</div></div>
+<div class="ttc" id="abst_8h_html_aa12e0383fe08e07401429c7ddfbf3c0c"><div class="ttname"><a href="bst_8h.html#aa12e0383fe08e07401429c7ddfbf3c0c">bst_newNode</a></div><div class="ttdeci">bnode * bst_newNode(tipo_key, tipo_inf)</div><div class="ttdef"><b>Definition:</b> bst.cc:56</div></div>
+<div class="ttc" id="abst_8h_html_aae81f7032dbb2b4ff43e32e02a778e8b"><div class="ttname"><a href="bst_8h.html#aae81f7032dbb2b4ff43e32e02a778e8b">get_parent</a></div><div class="ttdeci">bnode * get_parent(bnode *n)</div><div class="ttdef"><b>Definition:</b> bst.cc:50</div></div>
+<div class="ttc" id="abst_8h_html_acc6ea038d88b5874d0b630f5e180319a"><div class="ttname"><a href="bst_8h.html#acc6ea038d88b5874d0b630f5e180319a">bst_delete</a></div><div class="ttdeci">void bst_delete(bst &amp;, bnode *)</div><div class="ttdef"><b>Definition:</b> bst.cc:113</div></div>
+<div class="ttc" id="abst_8h_html_acf36ff27901ecb91f142d965aba5ba86"><div class="ttname"><a href="bst_8h.html#acf36ff27901ecb91f142d965aba5ba86">bst_insert</a></div><div class="ttdeci">void bst_insert(bst &amp;, bnode *)</div><div class="ttdef"><b>Definition:</b> bst.cc:64</div></div>
+<div class="ttc" id="abst_8h_html_aee0f3ff666c3dce88adf97f1d26ee07d"><div class="ttname"><a href="bst_8h.html#aee0f3ff666c3dce88adf97f1d26ee07d">bst</a></div><div class="ttdeci">bnode * bst</div><div class="ttdef"><b>Definition:</b> bst.h:12</div></div>
+<div class="ttc" id="abst_8h_html_af2c7e22e41817066e17751be91d632dd"><div class="ttname"><a href="bst_8h.html#af2c7e22e41817066e17751be91d632dd">tipo_key</a></div><div class="ttdeci">int tipo_key</div><div class="ttdef"><b>Definition:</b> bst.h:1</div></div>
+<div class="ttc" id="astructbnode_html"><div class="ttname"><a href="structbnode.html">bnode</a></div><div class="ttdef"><b>Definition:</b> bst.h:3</div></div>
+<div class="ttc" id="astructbnode_html_a359b6bc2998182d134f255e872a5d66b"><div class="ttname"><a href="structbnode.html#a359b6bc2998182d134f255e872a5d66b">bnode::key</a></div><div class="ttdeci">tipo_key key</div><div class="ttdef"><b>Definition:</b> bst.h:4</div></div>
+<div class="ttc" id="astructbnode_html_aa419335e7eb211c30f4517799ffcd306"><div class="ttname"><a href="structbnode.html#aa419335e7eb211c30f4517799ffcd306">bnode::parent</a></div><div class="ttdeci">bnode * parent</div><div class="ttdef"><b>Definition:</b> bst.h:8</div></div>
+<div class="ttc" id="astructbnode_html_ab77995e472d092c87a91b201e1fdeb89"><div class="ttname"><a href="structbnode.html#ab77995e472d092c87a91b201e1fdeb89">bnode::left</a></div><div class="ttdeci">bnode * left</div><div class="ttdef"><b>Definition:</b> bst.h:6</div></div>
+<div class="ttc" id="astructbnode_html_aeb96b50e389e2ca6c4a807bd4059d3bd"><div class="ttname"><a href="structbnode.html#aeb96b50e389e2ca6c4a807bd4059d3bd">bnode::right</a></div><div class="ttdeci">bnode * right</div><div class="ttdef"><b>Definition:</b> bst.h:7</div></div>
+<div class="ttc" id="astructbnode_html_aec462e942a87454d03b9912b184912bd"><div class="ttname"><a href="structbnode.html#aec462e942a87454d03b9912b184912bd">bnode::inf</a></div><div class="ttdeci">tipo_inf inf</div><div class="ttdef"><b>Definition:</b> bst.h:5</div></div>
+<div class="ttc" id="astructcarta_fedelt_xC3_xA0_html"><div class="ttname"><a href="structcarta_fedelt_xC3_xA0.html">cartaFedeltà</a></div><div class="ttdef"><b>Definition:</b> carta.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

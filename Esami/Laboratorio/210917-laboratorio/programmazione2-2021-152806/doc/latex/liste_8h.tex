@@ -1,0 +1,188 @@
+\hypertarget{liste_8h}{}\doxysection{liste.\+h File Reference}
+\label{liste_8h}\index{liste.h@{liste.h}}
+{\ttfamily \#include \char`\"{}tipo.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structelem}{elem}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{structelem}{elem}} $\ast$ \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} \mbox{\hyperlink{liste_8h_ad586fc3b061e5c92b2e18ffc7e90b96a}{tail}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}})
+\item 
+\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} \mbox{\hyperlink{liste_8h_a2ab5da0cec03dff90473c9047f406632}{prev}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}})
+\item 
+\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} \mbox{\hyperlink{liste_8h_a2f235f57d084db5bd8d8c6ea6282eb8d}{insert\+\_\+elem}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}, \mbox{\hyperlink{structelem}{elem}} $\ast$)
+\item 
+\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} \mbox{\hyperlink{liste_8h_a2a9647a11daf84cb9eb6f418780840b4}{delete\+\_\+elem}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}, \mbox{\hyperlink{structelem}{elem}} $\ast$)
+\item 
+\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} \mbox{\hyperlink{liste_8h_ac9b0abee054a39ed2ce08eee4a940349}{ord\+\_\+insert\+\_\+elem}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}, \mbox{\hyperlink{structelem}{elem}} $\ast$)
+\item 
+\mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}} \mbox{\hyperlink{liste_8h_a189ebc2703ddddc48318b7826be5b859}{head}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}})
+\item 
+\mbox{\hyperlink{structelem}{elem}} $\ast$ \mbox{\hyperlink{liste_8h_a94b072bf9ce0f93fbaaf62f4c4ba7783}{new\+\_\+elem}} (\mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}})
+\item 
+\mbox{\hyperlink{structelem}{elem}} $\ast$ \mbox{\hyperlink{liste_8h_af4cc078b390c4b70e94bf94f5aa7bd44}{search}} (\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}, \mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}\label{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}} 
+\index{liste.h@{liste.h}!lista@{lista}}
+\index{lista@{lista}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{lista}{lista}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structelem}{elem}}$\ast$ \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}
+
+
+
+Definition at line 17 of file liste.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{liste_8h_a2a9647a11daf84cb9eb6f418780840b4}\label{liste_8h_a2a9647a11daf84cb9eb6f418780840b4}} 
+\index{liste.h@{liste.h}!delete\_elem@{delete\_elem}}
+\index{delete\_elem@{delete\_elem}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{delete\_elem()}{delete\_elem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} delete\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{,  }\item[{\mbox{\hyperlink{structelem}{elem}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file liste.\+cc.
+
+
+
+References elem\+::prev, prev(), and elem\+::pun.
+
+\mbox{\Hypertarget{liste_8h_a189ebc2703ddddc48318b7826be5b859}\label{liste_8h_a189ebc2703ddddc48318b7826be5b859}} 
+\index{liste.h@{liste.h}!head@{head}}
+\index{head@{head}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{head()}{head()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}} head (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 14 of file liste.\+cc.
+
+
+
+References elem\+::inf.
+
+
+
+Referenced by ord\+\_\+insert\+\_\+elem(), quanti(), search(), and stampa().
+
+\mbox{\Hypertarget{liste_8h_a2f235f57d084db5bd8d8c6ea6282eb8d}\label{liste_8h_a2f235f57d084db5bd8d8c6ea6282eb8d}} 
+\index{liste.h@{liste.h}!insert\_elem@{insert\_elem}}
+\index{insert\_elem@{insert\_elem}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{insert\_elem()}{insert\_elem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} insert\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{,  }\item[{\mbox{\hyperlink{structelem}{elem}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file liste.\+cc.
+
+
+
+References elem\+::prev, and elem\+::pun.
+
+
+
+Referenced by ord\+\_\+insert\+\_\+elem().
+
+\mbox{\Hypertarget{liste_8h_a94b072bf9ce0f93fbaaf62f4c4ba7783}\label{liste_8h_a94b072bf9ce0f93fbaaf62f4c4ba7783}} 
+\index{liste.h@{liste.h}!new\_elem@{new\_elem}}
+\index{new\_elem@{new\_elem}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{new\_elem()}{new\_elem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelem}{elem}}$\ast$ new\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file liste.\+cc.
+
+
+
+References copy(), elem\+::inf, elem\+::prev, and elem\+::pun.
+
+
+
+Referenced by agenda().
+
+\mbox{\Hypertarget{liste_8h_ac9b0abee054a39ed2ce08eee4a940349}\label{liste_8h_ac9b0abee054a39ed2ce08eee4a940349}} 
+\index{liste.h@{liste.h}!ord\_insert\_elem@{ord\_insert\_elem}}
+\index{ord\_insert\_elem@{ord\_insert\_elem}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{ord\_insert\_elem()}{ord\_insert\_elem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} ord\+\_\+insert\+\_\+elem (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{,  }\item[{\mbox{\hyperlink{structelem}{elem}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 57 of file liste.\+cc.
+
+
+
+References compare(), head(), elem\+::inf, insert\+\_\+elem(), elem\+::prev, elem\+::pun, and tail().
+
+
+
+Referenced by agenda().
+
+\mbox{\Hypertarget{liste_8h_a2ab5da0cec03dff90473c9047f406632}\label{liste_8h_a2ab5da0cec03dff90473c9047f406632}} 
+\index{liste.h@{liste.h}!prev@{prev}}
+\index{prev@{prev}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{prev()}{prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file liste.\+cc.
+
+
+
+References elem\+::prev.
+
+
+
+Referenced by delete\+\_\+elem().
+
+\mbox{\Hypertarget{liste_8h_af4cc078b390c4b70e94bf94f5aa7bd44}\label{liste_8h_af4cc078b390c4b70e94bf94f5aa7bd44}} 
+\index{liste.h@{liste.h}!search@{search}}
+\index{search@{search}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structelem}{elem}}$\ast$ search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{,  }\item[{\mbox{\hyperlink{structtipo__inf}{tipo\+\_\+inf}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file liste.\+cc.
+
+
+
+References compare(), head(), and tail().
+
+
+
+Referenced by agenda().
+
+\mbox{\Hypertarget{liste_8h_ad586fc3b061e5c92b2e18ffc7e90b96a}\label{liste_8h_ad586fc3b061e5c92b2e18ffc7e90b96a}} 
+\index{liste.h@{liste.h}!tail@{tail}}
+\index{tail@{tail}!liste.h@{liste.h}}
+\doxysubsubsection{\texorpdfstring{tail()}{tail()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}} tail (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{liste_8h_afa96fc24e07dc68ec8fa77eadb5c5f7c}{lista}}}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 34 of file liste.\+cc.
+
+
+
+References elem\+::pun.
+
+
+
+Referenced by ord\+\_\+insert\+\_\+elem(), quanti(), search(), and stampa().
+

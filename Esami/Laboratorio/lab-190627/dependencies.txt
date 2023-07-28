@@ -1,0 +1,4 @@
+compito.o: compito.cc tipo.h liste.h grafo.h
+grafo.o: grafo.cc grafo.h
+liste.o: liste.cc tipo.h liste.h
+tipo.o: tipo.cc tipo.h

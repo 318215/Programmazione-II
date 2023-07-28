@@ -1,0 +1,57 @@
+Cosa ci verrà chiesto?
+Makefile -> √
+Caricare Da File un qualsivoglia tipo di struttura dato -> √
+Documentazione (Doxygen) -> √
+Stampare liste -> √ 
+while(head(lista) != NULL) {
+
+    cout << lista->inf;
+    lista = tail(lista);
+
+}
+Stampare Alberi -> √
+
+
+cout << get_info(t);
+tree t1 = get_firstChild(t);
+while(t1 != NULL) {
+
+    serializza(t1);
+    t1 = get_nextSibling(t1);
+
+}
+
+Stampare Alberi Binari -> √
+
+if(get_left(t) != NULL) {
+
+    richiamo funz con get_left(t);
+
+}
+
+cout << t->inf;
+
+if(get_right(t) != NULL ) {
+
+    richiamo funz con get_right(t);
+
+}
+
+
+Stampare grafi -> √
+
+adj_list tmp;
+
+for(int i = 0; i < get_dim(G); i ++) {
+
+    tmp = get_adjlist(G,i+1);
+    cout << i << " ";
+    while(tmp) {
+
+        cout << "----> ";
+        cout << get_adjnode(tmp);
+        tmp = get_nextadj(tmp);
+
+    }
+
+}
